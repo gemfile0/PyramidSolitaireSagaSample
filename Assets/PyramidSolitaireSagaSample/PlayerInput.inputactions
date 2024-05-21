@@ -1,0 +1,210 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "GameBoard",
+            "id": "206c3b82-1804-4e7e-9353-8ef7149d393c",
+            "actions": [
+                {
+                    "name": "SwapTool",
+                    "type": "Button",
+                    "id": "ee4c0f45-c94b-4703-8bc3-1f79e8cfa583",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HistoryButton",
+                    "type": "Button",
+                    "id": "84ff45ef-d72b-4677-b199-3bc65a01b614",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "739b93cb-5502-4dd5-9bdc-517f1c452448",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapTool",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "efe9bbef-eb65-492d-9049-dbaab41949b7",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapTool",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d371045-d66b-4829-ba0b-69c61845f2ac",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapTool",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2feec270-99f1-495f-8a97-e37c6295f5f7",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapTool",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "121a3eb1-8ed9-490a-badc-2f575cfd62ce",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HistoryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5be2a8fd-1d86-44ef-8648-0317b0ab91f7",
+                    "path": "<Keyboard>/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HistoryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "CardDeck",
+            "id": "30aaa09e-8621-4de5-b6c4-f2edb154bdd9",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "93f447b2-b0e3-48d3-b617-f9f2937ebe5b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7d61cd7b-9e9f-45a0-8991-d8e1311e8c44",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Popup",
+            "id": "996f233f-8748-4d48-9904-57094f58ad56",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "a1cd882f-5fc6-4dc0-89d2-00a4f7193163",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b999805c-e14c-4172-8b9f-60ba68e9ae14",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "LevelPlayer",
+            "id": "2041e164-4624-41d3-a90c-0ab80e5d48cf",
+            "actions": [
+                {
+                    "name": "MouseClick",
+                    "type": "Button",
+                    "id": "de8e8d61-c244-423b-9f3b-915e8bd8a370",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "70ccee0b-3fab-45d3-8beb-20a7a20a2338",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "BonusCardTransition",
+            "id": "55cce24c-43c1-4e69-b92e-ef800ccea654",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "3c0cac77-6758-4701-88dc-2f4270603e45",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ff83f437-8fb7-46de-aa94-f920100944b2",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

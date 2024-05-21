@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49f82c5c1cf70749a98ea8fe8486a18, type: 3}
+  m_Name: LevelTutorialData7
+  m_EditorClassIdentifier: 
+  _stepDataList:
+  - cardCloneType: 4
+    cardCloneDataList: []
+    hasUiClone: 0
+    uiCloneType: 0
+    uiCloneCardType: 0
+    uiLocation: 0
+    message: Jokers replace any cards! Try one now!
+    triggerDrawCard: 1
+  - cardCloneType: 0
+    cardCloneDataList: []
+    hasUiClone: 0
+    uiCloneType: 0
+    uiCloneCardType: 0
+    uiLocation: 0
+    message: 'From now on each level will start with one free Joker. Use it wisely! '
+    triggerDrawCard: 0

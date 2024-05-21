@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e32bb8ee6b6224998d0406b5e622ad, type: 3}
+  m_Name: GameBoardData
+  m_EditorClassIdentifier: 
+  _tileSize: {x: 2.142, y: 3.168}
+  _rowCount: 7
+  _colCount: 18
+  _toolDataList:
+  - Type: 0
+    highlightColor: {r: 1, g: 1, b: 1, a: 0.78431374}
+  - Type: 1
+    highlightColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+  - Type: 2
+    highlightColor: {r: 1, g: 1, b: 0, a: 0.39215687}
+  - Type: 3
+    highlightColor: {r: 1, g: 0, b: 0, a: 0.39215687}
+  _butterflySprite: {fileID: 21300000, guid: 275c9586065331643ae87eea121095ca, type: 3}

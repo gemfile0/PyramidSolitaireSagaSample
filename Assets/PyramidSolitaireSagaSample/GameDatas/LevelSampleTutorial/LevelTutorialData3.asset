@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49f82c5c1cf70749a98ea8fe8486a18, type: 3}
+  m_Name: LevelTutorialData3
+  m_EditorClassIdentifier: 
+  _stepDataList:
+  - cloneType: 1
+    cardRendererCloneDataList:
+    - cloneType: 1
+      cardIndex: {x: 4, y: 0}
+      cardType: 0
+      subCardType: 0
+    - cloneType: 1
+      cardIndex: {x: 6, y: 0}
+      cardType: 0
+      subCardType: 0
+    - cloneType: 1
+      cardIndex: {x: 8, y: 0}
+      cardType: 0
+      subCardType: 0
+    - cloneType: 1
+      cardIndex: {x: 10, y: 0}
+      cardType: 0
+      subCardType: 0
+    - cloneType: 1
+      cardIndex: {x: 12, y: 0}
+      cardType: 0
+      subCardType: 0
+    uiLocation: 1
+    message: Letter Cards ( J - Q - K - A ) are collected the same way as numbered
+      cards!
+    triggerDrawCard: 0
+  - cloneType: 3
+    cardRendererCloneDataList: []
+    uiLocation: 0
+    message: Now collect cards in this order 10 - J - Q - K - A - 2 and then backwards!
+    triggerDrawCard: 0
