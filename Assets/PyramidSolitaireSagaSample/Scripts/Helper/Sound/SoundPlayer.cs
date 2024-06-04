@@ -6,45 +6,27 @@ namespace PyramidSolitaireSagaSample.Helper
     public class SoundPlayer : MonoBehaviour
     {
         [SerializeField] private AudioClip _audioClip;
-        [SerializeField] private AudioSource _audioSourceRef;
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private float _audioDelay = .1f;
 
-        private Transform CachedTransform
-        {
-            get
-            {
-                if (_cachedTransform == null)
-                {
-                    _cachedTransform = transform;
-                }
-                return _cachedTransform;
-            }
-        }
-        private Transform _cachedTransform;
-
-        private GameObjectPool<AudioSource> _audioSourcePool;
-
-        private void Awake()
-        {
-            _audioSourcePool = new GameObjectPool<AudioSource>(
-                CachedTransform,
-                _audioSourceRef.gameObject
-            );
-        }
+        private bool _isInPlay;
 
         public void Play()
         {
-            StartCoroutine(PlayCoroutine());
+            if (_isInPlay == false)
+            {
+                StartCoroutine(PlayCoroutine());
+            }
         }
 
         private IEnumerator PlayCoroutine()
         {
-            AudioSource audioSource = _audioSourcePool.Get();
-            audioSource.transform.SetParent(CachedTransform);
-            audioSource.clip = _audioClip;
-            audioSource.Play();
+            _isInPlay = true;
 
-            yield return new WaitForSeconds(_audioClip.length);
-            _audioSourcePool.Release(audioSource);
+            _audioSource.PlayOneShot(_audioClip);
+
+            yield return new WaitForSeconds(_audioDelay);
+            _isInPlay = false;
         }
     }
 }

@@ -276,7 +276,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3954590446036890005, guid: 8d6c21258455010479c103acc622ddd0, type: 3}
       propertyPath: m_Name
-      value: DealingSound
+      value: ThrowingSound
       objectReference: {fileID: 0}
     - target: {fileID: 5027241143004520808, guid: 8d6c21258455010479c103acc622ddd0, type: 3}
       propertyPath: m_PlayOnAwake

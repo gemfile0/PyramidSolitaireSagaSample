@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5995143176114988749}
   - component: {fileID: 3839576187105823034}
   m_Layer: 0
-  m_Name: DealingSound
+  m_Name: ThrowingSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f4e51d81ce5b1540b25a044770ce7b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioClip: {fileID: 8300000, guid: 8193d7f91d6cd054b92f00f5d65375cc, type: 3}
-  _audioSourceRef: {fileID: 5220969940503920068}
+  _audioClip: {fileID: 8300000, guid: d6fdc165f0555bb48bb541bd5d862182, type: 3}
+  _audioSource: {fileID: 5220969940503920068}
+  _audioDelay: 0.1
 --- !u!1 &7284704906307172453
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +92,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.15
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
