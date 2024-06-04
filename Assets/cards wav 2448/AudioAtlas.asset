@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cb9e44d5abb4dcdbcef39ac1dd5cc3c, type: 3}
+  m_Name: AudioAtlas
+  m_EditorClassIdentifier: 
+  audioImportSettings:
+  - {fileID: 11400000, guid: 02d8fe6fe09b41db8dc63ac07da5a40c, type: 2}
+  - {fileID: 11400000, guid: 37ca67e298f844f7ae4a6dfadcc5200d, type: 2}
+  - {fileID: 11400000, guid: ca795b3167f441739d63d55846e44009, type: 2}
+  - {fileID: 11400000, guid: 79013c4ee42d444d85cf2bec498c16cb, type: 2}
+  audioLists:
+  - name: 6. Music (long pieces)
+    assets: []
+  - name: 9. Special FX (long)
+    assets: []
+  - name: 10. Special FX (short)
+    assets:
+    - {fileID: 102900000, guid: 82898264179a83746b62f91d15030594, type: 3}
+    - {fileID: 102900000, guid: 300ee931a19c71c4a8ba79afd5257da8, type: 3}
+    - {fileID: 102900000, guid: 8d3ba84b5ae31a846830ff0689f7bd3a, type: 3}
+    - {fileID: 102900000, guid: 8acaae915ba8adc45b96f42c2297cb34, type: 3}
+    - {fileID: 102900000, guid: 0d4eb9321acbd204fa97287ee7f359ca, type: 3}
+  - name: 12. UI sounds (short)
+    assets: []
