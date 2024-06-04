@@ -23,7 +23,10 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.GameBoard
 
         [Header("Highlight")]
         [SerializeField] private Transform _highlightTransform;
-        [SerializeField] private SoundPlayer _throwingSound;
+
+        [Header("Sound")]
+        [SerializeField] private SoundPlayer _throwSound;
+        [SerializeField] private SoundPlayer _collectSound;
 
         public event Action<Vector3/* centerPosition */, Vector3/* halfSize */> onTileBoundHalfSize;
         public event Action<Vector2Int, int> onCardClick;
@@ -372,7 +375,7 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.GameBoard
                                     // A-3. 제자리로 찾아갈 때 카드들이 CardCollector 를 스쳐 지나가므로 임시로 SortingOrder 값을 바꿨다가,
                                     .OnStart(() =>
                                     {
-                                        _throwingSound.Play();
+                                        _throwSound.Play();
                                         cardRenderer.UpdateSortingOrderWithoutCache(movingSortingOrder);
                                     })
                                     // A-4. 제자리로 찾아간 후에 본래의 카드 ID 순으로 SortingOrder 값을 되돌려준다.
@@ -403,6 +406,8 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.GameBoard
             cardRenderer.CachedTransform.SetParent(itemRoot, true);
             cardRenderer.UpdateSortingOrder(sortingOrder);
             cardRenderer.SetColliderObject(false);
+
+            _collectSound.Play();
             Sequence sequence = DOTween.Sequence();
             sequence.Append(cardRenderer.CachedTransform.DOMove(itemPosition, moveDuration)
                                         .SetEase(moveEase));

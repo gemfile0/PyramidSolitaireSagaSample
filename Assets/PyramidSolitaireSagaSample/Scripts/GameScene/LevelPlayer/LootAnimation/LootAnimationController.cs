@@ -58,6 +58,9 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.LootAnimation
         [SerializeField] private Transform _itemRendererRoot;
         [SerializeField] private TextContainer _countTextPrefab;
 
+        [Header("Sound")]
+        [SerializeField] private SoundPlayer _collectSound;
+
         private IEnumerable<ILootAnimationTrigger> _lootAnimationTriggers;
 
         private GameObjectPool<SpriteRendererContainer> _cardRendererPool;
@@ -155,6 +158,8 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.LootAnimation
             // 연출 시작
             item.LootAnimationEndPoint.BeginLootAnimation();
 
+            _collectSound.Play();
+
             Sequence totalSequence = DOTween.Sequence();
             float spawnDelay = _lootAnimationData.SpawnDelay;
             float sequenceDelay = 0f;
@@ -238,6 +243,8 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.LootAnimation
 
             // 연출 시작
             item.LootAnimationEndPoint.BeginLootAnimation();
+
+            _collectSound.Play();
 
             Sequence sequence = DOTween.Sequence();
             sequence.Append(cardRenderer.SpriteRenderer.DOFade(1f, _lootAnimationData.FadeDuration)

@@ -12,6 +12,7 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.JokerDeck
         [SerializeField] private Transform _itemRendererRoot;
         [SerializeField] private SpriteRendererContainer _itemRendererPrefab;
         [SerializeField] private TextContainer _countText;
+        [SerializeField] private SoundPlayer _collectSound;
 
         public event Action onItemClick;
 
@@ -54,8 +55,8 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.JokerDeck
         }
 
         internal void DrawItem(
-            Transform itemRoot, 
-            Vector3 itemPosition, 
+            Transform itemRoot,
+            Vector3 itemPosition,
             int sortingOrder,
             float moveDuration,
             Ease moveEase,
@@ -68,6 +69,9 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.JokerDeck
             itemRenderer.CachedTransform.SetParent(itemRoot);
             itemRenderer.UpdateSortingOrder(sortingOrder);
             itemRenderer.CollierObject.SetActive(false);
+
+            _collectSound.Play();
+
             Sequence sequence = DOTween.Sequence();
             sequence.Append(itemRenderer.CachedTransform.DOMove(itemPosition, moveDuration)
                                         .SetEase(moveEase));
