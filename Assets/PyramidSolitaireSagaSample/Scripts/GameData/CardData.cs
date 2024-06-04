@@ -50,7 +50,7 @@ namespace PyramidSolitaireSagaSample.GameData
         }
     }
 
-    [CreateAssetMenu(menuName = "Solitaire Makeover/Card Data")]
+    [CreateAssetMenu(menuName = "PyramidSolitaireSagaSample/Card Data")]
     public class CardData : ScriptableObject
     {
         [SerializeField] private Vector2 _cardSize;

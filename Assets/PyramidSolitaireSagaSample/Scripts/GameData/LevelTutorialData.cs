@@ -79,7 +79,7 @@ namespace PyramidSolitaireSagaSample.GameData
         public bool triggerDrawCard;
     }
 
-    [CreateAssetMenu(menuName = "Solitaire Makeover/Level Tutorial Data")]
+    [CreateAssetMenu(menuName = "PyramidSolitaireSagaSample/Level Tutorial Data")]
     public class LevelTutorialData : ScriptableObject
     {
         [SerializeField] protected List<LevelTutorialStepData> _stepDataList;

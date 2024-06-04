@@ -9,7 +9,7 @@ namespace PyramidSolitaireSagaSample.GameData
         LevelSample = 2
     }
 
-    [CreateAssetMenu(menuName = "Solitaire Makeover/Level File Data")]
+    [CreateAssetMenu(menuName = "PyramidSolitaireSagaSample/Level File Data")]
     public class LevelFileData : ScriptableObject
     {
         [SerializeField] private string _levelDataPathBase = "Assets/PyramidSolitaireSagaSample/GameDatas";

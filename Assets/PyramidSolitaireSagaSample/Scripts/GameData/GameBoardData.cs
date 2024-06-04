@@ -20,7 +20,7 @@ namespace PyramidSolitaireSagaSample.GameData
         public Color highlightColor;
     }
 
-    [CreateAssetMenu(menuName = "Solitaire Makeover/Game Board Data")]
+    [CreateAssetMenu(menuName = "PyramidSolitaireSagaSample/Game Board Data")]
     public class GameBoardData : ScriptableObject
     {
         [SerializeField] private Vector2 _tileSize;
