@@ -71,7 +71,7 @@ namespace PyramidSolitaireSagaSample.GameData
         }
     }
 
-    [CreateAssetMenu(menuName = "Solitaire Makeover/Game Mission Data")]
+    [CreateAssetMenu(menuName = "PyramidSolitaireSagaSample/Game Mission Data")]
     public class GameMissionData : ScriptableObject
     {
         [FormerlySerializedAs("_gameMissionIconList")]

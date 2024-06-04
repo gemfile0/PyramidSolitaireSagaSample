@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PyramidSolitaireSagaSample.GameData
 {
-    [CreateAssetMenu(menuName = "Solitaire Makeover/Ui Movement Data")]
+    [CreateAssetMenu(menuName = "PyramidSolitaireSagaSample/Ui Movement Data")]
     public class UiMovementData : ScriptableObject
     {
         [SerializeField] private float _missionUiMoveDuration = 1f;

@@ -27,7 +27,7 @@ namespace PyramidSolitaireSagaSample.GameData
         [field: SerializeField] public Sprite CardSprite { get; private set; }
     }
 
-    [CreateAssetMenu(menuName = "Solitaire Makeover/Bonus Cards Data")]
+    [CreateAssetMenu(menuName = "PyramidSolitaireSagaSample/Bonus Cards Data")]
     public class BonusCardsData : ScriptableObject
     {
         [Header("보너스 카드 이동 설정")]

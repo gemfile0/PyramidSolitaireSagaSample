@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PyramidSolitaireSagaSample.GameData
 {
-    [CreateAssetMenu(menuName = "Solitaire Makeover/Loot Animation Data")]
+    [CreateAssetMenu(menuName = "PyramidSolitaireSagaSample/Loot Animation Data")]
     public class LootAnimationData : ScriptableObject
     {
         [Header("전리품 애니메이션 이동 설정")]
