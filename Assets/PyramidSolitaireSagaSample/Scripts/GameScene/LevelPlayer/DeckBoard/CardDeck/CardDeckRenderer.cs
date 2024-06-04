@@ -24,6 +24,7 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.CardDeck
         [SerializeField] private Transform _itemRendererRoot;
         [SerializeField] private SpriteRendererContainer _itemRendererPrefab;
         [SerializeField] private TextContainer _countText;
+        [SerializeField] private SoundPlayer _drawSound;
 
         public event Action onItemClick;
 
@@ -104,6 +105,7 @@ namespace PyramidSolitaireSagaSample.LevelPlayer.CardDeck
             itemRenderer.UpdateSortingOrder(sortingOrder);
             if (useTween)
             {
+                _drawSound.Play();
                 itemRenderer.CachedTransform.DOLocalRotate(itemEulerAngles, cardMoveDuration)
                                             .OnUpdate(() =>
                                             {
