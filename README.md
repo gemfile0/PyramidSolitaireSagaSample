@@ -6,6 +6,9 @@ King.com 의 Pyramid Solitaire Saga 게임을 따라 만든 샘플 Unity 프로�
 - [50레벨 디자인 후 직접 플레이하는 영상 링크 (YouTube)](https://youtu.be/xlwPmFhutOU)
   > [레퍼런스 게임 플레이 영상 링크 (YouTube)](https://youtu.be/YH51ldCczJ8)
 
+## 사용한 Unity 에디터 버전
+Unity 에디터 버전 2022.3.21f1 을 사용했습니다.
+
 ## 게임 방법
 ![image](https://github.com/gemfile0/PyramidSolitaireSagaSample/assets/369285/9f5c570e-c0d3-468a-9fd6-fb7faa704f15)
 
