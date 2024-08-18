@@ -1,5 +1,5 @@
 # Pyramid Solitaire Saga Sample
-King.com 의 TriPeaks 장르 게임인 Pyramid Solitaire Saga 를 따라 만든 샘플 Unity 프로젝트입니다.
+King.com 의 TriPeaks 솔리테어 게임인 Pyramid Solitaire Saga 를 따라 만든 샘플 Unity 프로젝트입니다.
 
 - [WebGL 빌드 플레이 링크 (itch.io)](https://gemfile0.itch.io/pyramid-solitaire-saga-made-with-unity?secret=CfcK7JLitcgcBErwJd38efX57gY)
 - [11레벨 디자인 후 직접 플레이하는 영상 링크 (YouTube)](https://youtu.be/FUR7Q9k_uoo)  
